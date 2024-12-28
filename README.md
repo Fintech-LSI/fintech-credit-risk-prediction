@@ -27,8 +27,9 @@ to predict risk, the target variable in your dataset would typically be:
  
 This variable indicates whether the loan was successful (e.g., paid back) or not (e.g., defaulted). In your dataset:
 
-1 means the loan was approved or successful.
-0 (if present in other rows) would represent a failed or defaulted loan.
+- **1** means the loan was approved or successful.
+
+- **0** (if present in other rows) would represent a failed or defaulted loan.
 By predicting the loan_status, you can determine whether a borrower is likely to default (high risk) or successfully repay the loan (low risk).
 
 
