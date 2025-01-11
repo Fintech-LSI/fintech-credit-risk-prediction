@@ -67,7 +67,7 @@ The amount of the loan requested by the borrower. In this case, it is $35,000.
 
 The interest rate applied to the loan as a percentage. Here, it is 16.02%.
 
-9.** loan_status:**
+9.**loan_status:** `this is what we predict`
 
 Indicates whether the loan was approved (1) or not (0). In this case, the loan was approved.
 
