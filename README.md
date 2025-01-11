@@ -1,6 +1,16 @@
 # FinTech Credit Risk Prediction
 
-## Model example
+
+## Content 
+
+* notebooks : 
+    - main.ipynb `Logistic Regression`
+    - bagging.ipynb `Bagging (Random Forest)`
+    - boosting.ipynb
+
+**We use bagging**
+
+## JSON example
 
 ```
 {
