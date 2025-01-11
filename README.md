@@ -4,9 +4,9 @@
 ## Content 
 
 * notebooks : 
-    - main.ipynb `Logistic Regression`
+    - logistic_regression.ipynb `Logistic Regression`
     - bagging.ipynb `Bagging (Random Forest)`
-    - boosting.ipynb
+    - boosting.ipynb `boosting using xgboost algorithm`
 
 **We use bagging**
 
