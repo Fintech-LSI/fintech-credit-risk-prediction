@@ -95,3 +95,7 @@ Indicates whether the individual has a history of defaulting on loans. "Y" means
 12. **cb_person_cred_hist_length:**
 
 The length of the person's credit history in years. Here, it is 3 years.
+
+
+![FinTech Credit Risk Prediction - visual selection](https://github.com/user-attachments/assets/cbd05b0a-b959-4b2c-8b6d-2a2d5e26749e)
+
