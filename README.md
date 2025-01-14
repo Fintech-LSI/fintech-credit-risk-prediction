@@ -11,7 +11,7 @@
 **We use bagging**
 
 * backend service :
-    - credit_service.py `flask app`
+    - service.py `flask app`
 
 ## JSON example
 
