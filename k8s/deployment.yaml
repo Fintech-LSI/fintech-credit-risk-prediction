@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: credit-risk
+  namespace: fintech
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: credit-risk
+  template:
+    metadata:
+      labels:
+        app: credit-risk
+    spec:
+      containers:
+        - name: credit-risk
+          image: public.ecr.aws/z1z0w2y6/risk-prediction:latest
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
