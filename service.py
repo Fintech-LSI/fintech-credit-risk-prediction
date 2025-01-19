@@ -28,7 +28,7 @@ CATEGORICAL_FEATURES = [
 
 # Spring Boot API URL for updating loan status
 PORT = "8097"
-SPRING_BOOT_API_URL = 'http://aeba0ff7569d84b44a38e30571764046-1162532117.us-east-1.elb.amazonaws.com:' + PORT + '/api/loans'  # Replace with your Spring Boot API URL
+SPRING_BOOT_API_URL = 'http://a3063d09a41694002ade7ef737fe9050-1902268877.us-east-1.elb.amazonaws.com:' + PORT + '/api/loans'  # Replace with your Spring Boot API URL
 
 
 @app.route('/predict', methods=['POST'])
