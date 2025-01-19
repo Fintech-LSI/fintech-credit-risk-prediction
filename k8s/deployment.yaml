@@ -25,3 +25,20 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "500m"
+          env:
+            - name: FLASK_ENV
+              value: "production"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          livenessProbe:
+            httpGet:
+              path: /sample_input
+              port: 5000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /sample_input
+              port: 5000
+            initialDelaySeconds: 15
+            periodSeconds: 5

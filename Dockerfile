@@ -13,6 +13,9 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Create model directory
+RUN mkdir -p model
+
 # Copy model files and application code
 COPY model/random_forest_model.pkl model/
 COPY model/scaler.pkl model/
@@ -21,5 +24,5 @@ COPY credit_service.py .
 # Expose port
 EXPOSE 5000
 
-# Run the application
-CMD ["python", "credit_service.py"]
+# Run the application with gunicorn
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "credit_service:app"]
