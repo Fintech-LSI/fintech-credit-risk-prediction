@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         AWS_REGION = 'us-east-1'
-        IMAGE_NAME = 'credit-risk'
+        IMAGE_NAME = 'risk-prediction'
         ECR_REGISTRY = 'public.ecr.aws/z1z0w2y6'
         EKS_CLUSTER_NAME = 'main-cluster'
         NAMESPACE = 'fintech'
